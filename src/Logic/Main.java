@@ -6,11 +6,14 @@
 
 package Logic;
 
+import java.io.IOException;
+
 /**
  *
  * @author jairo
  */
 public class Main {
+    
 
     /**
      * @param args the command line arguments
@@ -18,9 +21,16 @@ public class Main {
     public static void main(String[] args) {
         
     }
-    /*public void crearComp(String ptipo,int pnumEntradas){
-        //Componente comp = new Componente(ptipo, ptipo, pnumEntradas, pnumEntradas, pnumEntradas)
+
+    public Main() {
+        
+    }
+    public void crearComp(String ptipo,int pnumEntradas){
+        Xml xml = new Xml(ptipo, pnumEntradas);
+        String ruta;
+        ruta = xml.getimageName();
+        Componente comp = new Componente(ptipo, ruta, pnumEntradas, 200, 200);
+    }
     
-    }*/
     
 }

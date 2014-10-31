@@ -7,10 +7,11 @@
  */
 package Facade;
 
-import Logic.Main;
-import Logic.Lista;
 import Logic.Componente;
 import Logic.Conexiones;
+import Logic.Lista;
+import Logic.Main;
+import static Logic.Main.main;
 
 /**
  *
@@ -21,12 +22,13 @@ import Logic.Conexiones;
 public class Facade {
     Lista lista;
     Conexiones conexion;
+    Main mains;
     
     public Facade (){
-        Main main = new Main();
+         mains= new Main();
     }
     public void crearComp(String ptipo,int pnumEntradas){
-        main.crearComp(ptipo,pnumEntradas);
+        mains.crearComp(ptipo,pnumEntradas);
     }
     public Lista getList(){
         return lista;

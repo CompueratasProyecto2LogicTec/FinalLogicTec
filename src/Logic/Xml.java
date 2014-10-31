@@ -81,12 +81,8 @@ public class Xml {
         
         return ruta;
     }
-    public static void main(String[] args) {
-        Xml xml = new Xml("And",2);
-        xml.leer();
-        
-    }
-    public void leer(){
+    
+    public String getimageName(){
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
         DocumentBuilder builder;
@@ -102,7 +98,8 @@ public class Xml {
             XPath xpath = xpathFactory.newXPath();
 
             String name = getImageName(doc, xpath);
-            System.out.println("Nombre de la imagen es: " + name);
+            return name;
+          
 
             /*List<String> names = getEmployeeNameWithAge(doc, xpath, 30);
             System.out.println("Employees with 'age>30' are:" + Arrays.toString(names.toArray()));
@@ -113,12 +110,14 @@ public class Xml {
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
+            return "";
         }
+        
 
     }
 
 
-    private static List<String> getImageName(Document doc, XPath xpath,String entrada) {
+    private static List<String> getImageNames(Document doc, XPath xpath,String entrada) {
         List<String> list = new ArrayList<>();
         try {
             //create XPathExpression object
@@ -152,7 +151,7 @@ public class Xml {
     }
 
 
-    private static String getImageName(Document doc, XPath xpath) {
+    public String getImageName(Document doc, XPath xpath) {
         String name = null;
         try {
             XPathExpression expr =

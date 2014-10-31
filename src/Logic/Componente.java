@@ -7,6 +7,8 @@
  */
 package Logic;
 
+import java.io.IOException;
+
 /**
  * This class create the object type Componente
  * @author Albin, Jairo and Ellioth
@@ -106,5 +108,8 @@ public class Componente {
      */
     public void setPosy(double _posy) {
         this._posy = _posy;
-    }    
+    }
+    public void setValorEntradas(int pdato) throws IOException{
+            _valorEntrada.insertHead(pdato);     
+    }
 }           
