@@ -18,5 +18,9 @@ public class Main {
     public static void main(String[] args) {
         
     }
+    public void crearComp(String ptipo,int pnumEntradas){
+        Componente comp = new Componente(ptipo, ptipo, pnumEntradas, pnumEntradas, pnumEntradas)
+    
+    }
     
 }

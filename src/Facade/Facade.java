@@ -7,6 +7,8 @@
  */
 package Facade;
 
+import Logic.Main;
+
 /**
  *
  * @author Albin, Jairo and Ellioth
@@ -16,8 +18,12 @@ package Facade;
 public class Facade {
     
     public Facade (){
-        
+        Main main = new Main();   
     }
+    public void crearComp(String ptipo,int pnumEntradas){
+        main.crearComp(ptipo,pnumEntradas);
+    }
+    
     
     
 }

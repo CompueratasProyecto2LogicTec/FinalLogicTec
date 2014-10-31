@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--> 
+<And_2>
+    <NumeroEntradas> 2 </NumeroEntradas>
+    <NumeroSalidas> 1 </NumeroSalidas>
+    <Img> ruta </Img>
+    <Entradas>
+        <Entrada id="E1"></Entrada>
+        <Entrada id="E2"></Entrada>
+    </Entradas>
+    <Salidas>
+        <salida id="S1"></salida>
+    </Salidas>
+    <Logic> "E1 & E2" </Logic>
+    <Tipo> "And 2 in 1 out"</Tipo>
+    <Id> and_2_1</Id>
+    <Descripcion> Compuerta de tipo And de dos entradas y solo una salida </Descripcion>
+</And_2>
+    
+

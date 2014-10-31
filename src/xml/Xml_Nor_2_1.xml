@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<Nor_2>
+    <NumeroEntradas> 2 </NumeroEntradas>
+    <NumeroSalidas> 1 </NumeroSalidas>
+    <Img> ruta </Img>
+    <Entradas>
+        <Entrada id="E16"></Entrada>
+        <Entrada id="E17"></Entrada>
+    </Entradas>
+    <Salidas>
+        <salida id="S7"></salida>
+    </Salidas>
+    <Logic> "!(E16 || E17)" </Logic>
+    <Tipo> "Nor 2 in 1 out"</Tipo>
+    <Id> nor_2_1</Id>
+    <Descripcion> Compuerta de tipo Nor de dos entradas y solo una salida </Descripcion>
+</Nor_2>

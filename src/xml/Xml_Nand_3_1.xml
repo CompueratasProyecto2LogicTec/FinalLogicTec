@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<Nand_3>
+    <NumeroEntradas> 3 </NumeroEntradas>
+    <NumeroSalidas> 1 </NumeroSalidas>
+    <Img> ruta </Img>
+    <Entradas>
+        <Entrada id="E13"></Entrada>
+        <Entrada id="E14"></Entrada>
+        <Entrada id="E15"></Entrada>
+    </Entradas>
+    <Salidas>
+        <salida id="S6"></salida>
+    </Salidas>
+    <Logic> "!(E13 & E14 & E15)" </Logic>
+    <Tipo> "Nand 3 in 1 out"</Tipo>
+    <Id> nand_3_1</Id>
+    <Descripcion> Compuerta de tipo Nand de tres entradas y solo una salida </Descripcion>
+</Nand_3>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<Not_1>
+    <NumeroEntradas> 1 </NumeroEntradas>
+    <NumeroSalidas> 1 </NumeroSalidas>
+    <Img> ruta </Img>
+    <Entradas>
+        <Entrada id="E26"></Entrada>
+    </Entradas>
+    <Salidas>
+        <salida id="S11"></salida>
+    </Salidas>
+    <Logic> "!(E26)" </Logic>
+    <Tipo> "Not 1 in 1 out"</Tipo>
+    <Id> Not_1_1</Id>
+    <Descripcion> Compuerta de tipo Not de una entradas y una salida </Descripcion>
+</Not_1>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<Xor_2>
+    <NumeroEntradas> 2 </NumeroEntradas>
+    <NumeroSalidas> 1 </NumeroSalidas>
+    <Img> ruta </Img>
+    <Entradas>
+        <Entrada id="E21"></Entrada>
+        <Entrada id="E22"></Entrada>
+    </Entradas>
+    <Salidas>
+        <salida id="S9"></salida>
+    </Salidas>
+    <Logic> "E21 ^ E22" </Logic>
+    <Tipo> "Xor 2 in 1 out"</Tipo>
+    <Id> Xor_2_1</Id>
+    <Descripcion> Compuerta de tipo Xor de dos entradas y solo una salida </Descripcion>
+</Xor_2>
