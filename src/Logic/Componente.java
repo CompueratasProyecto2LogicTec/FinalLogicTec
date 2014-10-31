@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Last edition: 10/30/2014
  */
 
+/**
+ * package Logic
+ */
 package Logic;
 
 /**
  *
- * @author jairo
+ * @author Albin, Jairo and Ellioth
  */
 public class Componente {
     private String _tipo;

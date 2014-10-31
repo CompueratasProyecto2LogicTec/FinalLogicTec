@@ -43,23 +43,21 @@ public class Lista <T>{
     public void setData(Nodo tmp,T pdata){
         tmp.set_data(pdata);
     }
-    //Obtiene el siguente elemento del que se esta localizado.
+    /**
+     * Get to obtain the next node 
+     * @param tmp
+     * @return Node
+     */
     public Nodo listaGetNext(Nodo tmp){
         tmp=tmp.getNext();
         return tmp;
     }
-    //Devuelve la "cabeza".
+    /**
+     * Get to obtain the head of the list
+     * @return Node
+     */
     public Nodo getHead(){
         return _head;
-    }
-    public int getLength(){
-        int tam=0;
-        Nodo tmp=_head;
-        while (tmp!=null){
-            tam++;
-            tmp=tmp.getNext();
-        }
-        return tam;       
     }
     /**
      * Method to insert elements in the list
@@ -142,6 +140,11 @@ public class Lista <T>{
     }
     
     //Busca una palabra de la lista para compararla.
+    /**
+     * Method to search any word and compare this
+     * @param pdata
+     * @return boolean value (true if the word is equals)
+     */
     public boolean buscarSimple(String pdata){
         Nodo tmp;
         tmp=_head;
@@ -154,7 +157,10 @@ public class Lista <T>{
         }
         return false;
     }
-    //Este metodo imprime la matriz.
+    /**
+     * Method to impress the list
+     * @param lista 
+     */
     public void imprimir(Lista lista){
         Nodo tmp=lista._head;
         int cont=0;
