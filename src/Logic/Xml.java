@@ -28,7 +28,7 @@ import org.xml.sax.SAXException;
  *
  * @author estadm
  */
-/*public class Xml {
+public class Xml {
     String _tipo;
     int _numEntrada;
     String ruta;
@@ -41,23 +41,59 @@ import org.xml.sax.SAXException;
     public String direccion(){
         if (_tipo.equals("And")){
             if(_numEntrada == 2)
-                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_And_2_1.xml";
-            else
                 ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_And_3_1.xml";
-                
+            else
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_And_3_1.xml";     
         }
-    
-    
-    
+        if (_tipo.equals("Or")){
+            if(_numEntrada == 2)
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Or_2_1.xml";
+            else
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Or_3_1.xml";    
+        }
+        if (_tipo.equals("Nand")){
+            if(_numEntrada == 2)
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Nand_2_1.xml";
+            else
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Nand_3_1.xml";    
+        }
+        if (_tipo.equals("Nor")){
+            if(_numEntrada == 2)
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Nor_2_1.xml";
+            else
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Nor_3_1.xml";    
+        }
+        if (_tipo.equals("Xnor")){
+            if(_numEntrada == 2)
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Xnor_2_1.xml";
+            else
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Xnor_3_1.xml";    
+        }
+        if (_tipo.equals("Xor")){
+            if(_numEntrada == 2)
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Xor_2_1.xml";
+            else
+                ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Xor_3_1.xml";    
+        }
+        if (_tipo.equals("Not")){
+            ruta = "/D:/Usuarios/estadm/Documents/NetBeansProjects/FinalLogicTec/src/xml/Xml_Npt_1_1.xml";
+        }
+        
+        return ruta;
     }
     public static void main(String[] args) {
+        Xml xml = new Xml("And",2);
+        xml.leer();
+        
+    }
+    public void leer(){
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
         DocumentBuilder builder;
         Document doc = null;
         try {
             builder = factory.newDocumentBuilder();
-            doc = builder.parse("/C:/Users/albin.mora/Documents/NetBeansProjects/Xml/src/xml/employees.xml");
+            doc = builder.parse(direccion());
 
             // Create XPathFactory object
             XPathFactory xpathFactory = XPathFactory.newInstance();
@@ -65,15 +101,15 @@ import org.xml.sax.SAXException;
             // Create XPath object
             XPath xpath = xpathFactory.newXPath();
 
-            String name = getEmployeeNameById(doc, xpath, 4);
-            System.out.println("Employee Name with ID 4: " + name);
+            String name = getImageName(doc, xpath);
+            System.out.println("Nombre de la imagen es: " + name);
 
-            List<String> names = getEmployeeNameWithAge(doc, xpath, 30);
+            /*List<String> names = getEmployeeNameWithAge(doc, xpath, 30);
             System.out.println("Employees with 'age>30' are:" + Arrays.toString(names.toArray()));
 
             List<String> femaleEmps = getFemaleEmployeesName(doc, xpath);
             System.out.println("Female Employees names are:" +
-                    Arrays.toString(femaleEmps.toArray()));
+                    Arrays.toString(femaleEmps.toArray()));*/
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
@@ -116,11 +152,11 @@ import org.xml.sax.SAXException;
     }
 
 
-    private static String getEmployeeNameById(Document doc, XPath xpath, int id) {
+    private static String getImageName(Document doc, XPath xpath) {
         String name = null;
         try {
             XPathExpression expr =
-                xpath.compile("/Employees/Employee[@id='" + id + "']/name/text()");
+                xpath.compile("/Comp/Img/text()");
             name = (String) expr.evaluate(doc, XPathConstants.STRING);
         } catch (XPathExpressionException e) {
             e.printStackTrace();
@@ -131,4 +167,3 @@ import org.xml.sax.SAXException;
 
 }
 
-*/
