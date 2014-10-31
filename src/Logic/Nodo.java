@@ -8,9 +8,7 @@
 package Logic;
 
 /**
- *
  * @author Albin, Jairo and Ellioth
- * 
  * This class create the nodes
  */
 public class Nodo <T>{
@@ -20,7 +18,6 @@ public class Nodo <T>{
     
     /**
      * Constructor of the class
-     * 
      * @param pData 
      */
     public Nodo(T pData){
@@ -28,7 +25,6 @@ public class Nodo <T>{
     }
     /**
      * Get to know the data of the node
-     * 
      * @return value T (the data of the node)
      */
     public T get_data(){
@@ -36,7 +32,6 @@ public class Nodo <T>{
     }
     /**
      * Set to change the data of the node
-     * 
      * @param pdata (type T) 
      */
     public void set_data(T pdata){
@@ -44,23 +39,20 @@ public class Nodo <T>{
     }
     /**
      * Set to change the next node
-     * 
-     * @param next (type Nodo)
+     * @param next (type Node)
      */
     public void setNext(Nodo next){
         this._next = next;
     }
     /**
      * Set to change the previous node
-     * 
-     * @param anterior (type Nodo)
+     * @param anterior (type Node)
      */
     public void setAnterior(Nodo anterior){
         this._anterior=anterior;
     }
     /**
      * Get to know the next node
-     * 
      * @return node (next node)
      */
     public Nodo getNext(){
@@ -68,7 +60,6 @@ public class Nodo <T>{
     }
     /**
      * Get to know the previous node
-     * 
      * @return node (previous node)
      */
     public Nodo getAnterior(){

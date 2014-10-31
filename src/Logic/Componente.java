@@ -21,15 +21,15 @@ public class Componente {
     private double _posy;
         
     
-    public Componente (String _tipo, String _imagen, int _numEntradas, Lista _valorEntrada, double _posx, double _posy){
+    public Componente (String _tipo, String _imagen, int _numEntradas, double _posx, double _posy){
         this._tipo = _tipo;
         this._imagen = _imagen;
         this._numEntradas = _numEntradas;
-        this._valorEntrada=_valorEntrada;
         this._numEntradasRestantes=0;
         this._posx=_posx;
         this._posy=_posy;
         this._sigtConexion = null;
+        this._valorEntrada=null;
     }   
     
     public String getTipo(){
