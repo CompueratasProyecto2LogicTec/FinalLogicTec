@@ -1,25 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Last edition: 10/30/2014
  */
 
+/**
+ * package Logic
+ */
 package Logic;
 
 /**
- *
- * @author jairo
+ *Class to do the connection among Componentes
+ * @author Albin, Jairo and Ellioth
  */
-
 public class Conexiones {
-    
     private Lista _componente;
-    
+    /**
+     * Constructor of the class
+     * @param _componente 
+     */
     public Conexiones(Lista _componente){
         this._componente=_componente;
-                
     }
-    
+    /**
+     * To validate the  Componentes connection
+     * @return boolean value
+     */
     public boolean validaConexion (){
         Nodo tmp= this._componente.getHead();
         int contadorCompuertas=0;
@@ -33,6 +37,13 @@ public class Conexiones {
         if (contadorCompuertas>1)
             condicion=false;
         return condicion;
+    }
+    
+    public void establecerConexion (Componente componente1,Componente componente2){
+        
+    }
+    public void Switch (Componente componente1, Componente componente2){
+        
     }
     
     

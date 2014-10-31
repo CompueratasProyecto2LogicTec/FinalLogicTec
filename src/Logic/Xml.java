@@ -28,7 +28,7 @@ import org.xml.sax.SAXException;
  *
  * @author estadm
  */
-public class Xml {
+/*public class Xml {
     String _tipo;
     int _numEntrada;
     String ruta;
@@ -131,3 +131,4 @@ public class Xml {
 
 }
 
+*/

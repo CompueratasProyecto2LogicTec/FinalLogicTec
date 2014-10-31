@@ -19,7 +19,7 @@ public class Main {
         
     }
     public void crearComp(String ptipo,int pnumEntradas){
-        Componente comp = new Componente(ptipo, ptipo, pnumEntradas, pnumEntradas, pnumEntradas)
+        //Componente comp = new Componente(ptipo, ptipo, pnumEntradas, pnumEntradas, pnumEntradas)
     
     }
     

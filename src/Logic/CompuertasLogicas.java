@@ -1,28 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Last edition: 10/30/2014
  */
 
+/**
+ * package Logic
+ */
 package Logic;
 
 /**
- *
+ * This class execute the process of any Compuerta Logic
  * @author jairo
  */
-public class CompuertasLogicas {
-    
+public class CompuertasLogicas {  
     private String _tipo;
     private Lista _lista;
     private int _cero=0;
     private int _uno=1;
-
+    /**
+     * Constructor of the class
+     * @param _tipo
+     * @param _lista 
+     */
     public CompuertasLogicas(String _tipo, Lista _lista) {
         this._tipo=_tipo;
         this._lista=_lista;
     }
-    
-       
+    /**
+     * This method identify the _tipo and go information to respective Compuerta
+     * @param _tipo
+     * @param _lista 
+     */
     public void compuertas (String _tipo, Lista _lista){
         if(_tipo.equals("And"))
             And(_lista);
@@ -41,7 +48,11 @@ public class CompuertasLogicas {
         else
             Linea(_lista);
     }
-        
+    /**
+     * This method do the Compuerta And
+     * @param _lista
+     * @return int (result of the operation)
+     */    
     private int And (Lista _lista){
         Nodo tmp = _lista.getHead();
         int x=_uno;
@@ -54,7 +65,11 @@ public class CompuertasLogicas {
         }
         return x;
     }
-    
+    /**
+     * This method do the negative of the Compuerta And
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Nand(Lista _lista){
         Nodo tmp = _lista.getHead();
         int x=_cero;
@@ -67,7 +82,11 @@ public class CompuertasLogicas {
         }
         return x;
     }
-    
+    /**
+     * This method do the Compuerta Or
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Or (Lista _lista){
         Nodo tmp = _lista.getHead();
         int x=_cero;
@@ -80,7 +99,11 @@ public class CompuertasLogicas {
         }
         return x;
     }
-    
+    /**
+     * This method do the negative of the Compuerta Or
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Nor(Lista _lista){
         Nodo tmp = _lista.getHead();
         int x=_uno;
@@ -91,10 +114,13 @@ public class CompuertasLogicas {
                 x=_cero;
                 break;}
         }
-        System.out.print(x);
         return x;
     }
-    
+    /**
+     * This method do the Compuerta Exclusive Or
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Xor(Lista _lista){
         Nodo tmp = _lista.getHead().getNext();
         int x= (int)_lista.getHead().get_data();
@@ -110,7 +136,11 @@ public class CompuertasLogicas {
         }
         return x;
     }
-    
+    /**
+     * This method do the negative of the Compuerta Exclusive Or
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Xnor(Lista _lista){
         Nodo tmp = _lista.getHead().getNext();
         int x= (int)_lista.getHead().get_data();
@@ -126,7 +156,11 @@ public class CompuertasLogicas {
         }
         return x;
     }
-    
+    /**
+     * This method do the Compuerta Not
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Not (Lista _lista){
         if (_lista.getHead().get_data().equals(_uno)){
             return _cero;
@@ -135,7 +169,11 @@ public class CompuertasLogicas {
             return _uno;
         }
     }
-    
+    /**
+     * This method do the data of the line
+     * @param _lista
+     * @return int (result of the operation)
+     */
     private int Linea (Lista _lista){
         if (_lista.getHead().get_data().equals(_uno)){
             return _uno;
