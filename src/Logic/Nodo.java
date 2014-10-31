@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package logic;
+package Logic;
 
 /**
  *
@@ -14,8 +14,7 @@ public class Nodo <T>{
     private T _data;
     private Nodo _next;
     private Nodo _anterior;
-    private Nodo _hijo;
-    
+        
     public Nodo(T pData){
         this._data=pData;
     }
@@ -36,11 +35,5 @@ public class Nodo <T>{
     }
     public Nodo getAnterior(){
         return _anterior;
-    }
-    public Nodo getHijo(){
-        return _hijo;
-    }
-    public void setHijo(Nodo hijo){
-        this._hijo = hijo;
     }
 }
