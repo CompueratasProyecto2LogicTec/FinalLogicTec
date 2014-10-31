@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 
 
-<Xor_3>
+<Comp>
     <NumeroEntradas> 3 </NumeroEntradas>
     <NumeroSalidas> 1 </NumeroSalidas>
     <Img> ruta </Img>
@@ -22,4 +22,4 @@ and open the template in the editor.
     <Tipo> "Xor 3 in 1 out"</Tipo>
     <Id> Xor_3_1</Id>
     <Descripcion> Compuerta de tipo Xor de tres entradas y solo una salida </Descripcion>
-</Xor_3>
+</Comp>

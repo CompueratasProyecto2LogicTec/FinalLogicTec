@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<Nand_2>
+<Comp>
     <NumeroEntradas> 2 </NumeroEntradas>
     <NumeroSalidas> 1 </NumeroSalidas>
     <Img> ruta </Img>
@@ -20,4 +20,4 @@ and open the template in the editor.
     <Tipo> "Nand 2 in 1 out"</Tipo>
     <Id> nand_2_1</Id>
     <Descripcion> Compuerta de tipo Nand de dos entradas y solo una salida </Descripcion>
-</Nand_2>
+</Comp>

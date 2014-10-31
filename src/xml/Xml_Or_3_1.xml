@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<Or_3>
+<Comp>
     <NumeroEntradas> 3 </NumeroEntradas>
     <NumeroSalidas> 1 </NumeroSalidas>
     <Img> ruta </Img>
@@ -21,4 +21,4 @@ and open the template in the editor.
     <Tipo> "Or 3 in 1 out"</Tipo>
     <Id> or_3_1</Id>
     <Descripcion> Compuerta de tipo Or de tres entradas y solo una salida </Descripcion>
-</Or_3>
+</Comp>

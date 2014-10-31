@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<Nand_3>
+<Comp>
     <NumeroEntradas> 3 </NumeroEntradas>
     <NumeroSalidas> 1 </NumeroSalidas>
     <Img> ruta </Img>
@@ -21,5 +21,5 @@ and open the template in the editor.
     <Tipo> "Nand 3 in 1 out"</Tipo>
     <Id> nand_3_1</Id>
     <Descripcion> Compuerta de tipo Nand de tres entradas y solo una salida </Descripcion>
-</Nand_3>
+</Comp>
 

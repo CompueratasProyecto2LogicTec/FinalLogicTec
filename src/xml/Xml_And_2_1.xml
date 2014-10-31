@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 --> 
-<And_2>
+<Comp>
     <NumeroEntradas> 2 </NumeroEntradas>
     <NumeroSalidas> 1 </NumeroSalidas>
     <Img> ruta </Img>
@@ -19,6 +19,6 @@ and open the template in the editor.
     <Tipo> "And 2 in 1 out"</Tipo>
     <Id> and_2_1</Id>
     <Descripcion> Compuerta de tipo And de dos entradas y solo una salida </Descripcion>
-</And_2>
+</Comp>
     
 
