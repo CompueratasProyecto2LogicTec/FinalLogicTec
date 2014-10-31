@@ -19,12 +19,12 @@ import static Logic.Main.main;
  * 
  * Class to transfer data
  */
-public class Facade {
+public class facade {
     Lista lista;
     Conexiones conexion;
     Main mains;
     
-    public Facade (){
+    public facade (){
          mains= new Main();
     }
     public void crearComp(String ptipo,int pnumEntradas){
@@ -37,8 +37,8 @@ public class Facade {
     public void Connection (Componente componente1, Componente componente2){
         conexion.establecerConexion(componente1, componente2);
     }
-    public void Switch (Componente componente1, Componente componente2){
-        conexion.Switch(componente1, componente2);
+    public void Switch (Componente componente, int cambio){
+        conexion.Switch(componente, cambio);
     }
     
 }

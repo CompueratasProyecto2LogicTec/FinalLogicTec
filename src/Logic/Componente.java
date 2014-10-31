@@ -112,4 +112,8 @@ public class Componente {
     public void setValorEntradas(int pdato) throws IOException{
             _valorEntrada.insertHead(pdato);     
     }
+    
+    public void changeValorEntrada (int pdata){
+        this._valorEntrada.getHead().set_data(pdata);
+    }
 }           

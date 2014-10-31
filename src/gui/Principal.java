@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import Logic.*;
-import Facade.Facade;
+import Facade.facade;
 /**
  *
  * @author ellioth
@@ -44,7 +44,7 @@ public class Principal extends javax.swing.JFrame {
     ObtenerEntradas entrarVal;
     public boolean ingresar;
     private int numEntradas;
-    private Facade facade;
+    private facade facade;
     
     
     /**
@@ -67,7 +67,7 @@ public class Principal extends javax.swing.JFrame {
         val= new cuadroVal();
         entrarVal = new ObtenerEntradas();
         numEntradas=0;
-        facade = new Facade();
+        facade = new facade();
         initComponents();
         
     }
@@ -308,7 +308,7 @@ public class Principal extends javax.swing.JFrame {
             listComp.insertHead(ands);
         and++;
         val.setTotalL("and"+ Integer.toString(and));
-        facade.crearComp("And",);
+        facade.crearComp("And",3);
         ands= new JLabel(new javax.swing.ImageIcon(getClass().getResource("/images/and.png")));
         getContentPane().add(ands);
         fondo.add(ands);

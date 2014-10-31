@@ -42,8 +42,16 @@ public class Conexiones {
     public void establecerConexion (Componente componente1,Componente componente2){
         
     }
-    public void Switch (Componente componente1, Componente componente2){
-        
+    public void Switch (Componente componente, int cambio){
+        Nodo tmp = this._componente.getHead();
+        while (tmp!=null){
+            if (((Componente)tmp.get_data())==componente){
+                ((Componente)tmp.get_data()).changeValorEntrada(cambio);
+                break;
+            }
+            else
+                tmp=tmp.getNext();
+        }
     }
     
     
